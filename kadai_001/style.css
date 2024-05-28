@@ -9,13 +9,20 @@ body {
     margin: 0 auto;
     width: 100%;
 }
-
+h1 {
+    font-size: 34px;
+    text-align: center;
+}
+h2 {
+    font-size: 24px;
+}
+#copyright {
+    font-size: 18px;
+}
 nav {
     font-size: 34px;
     margin: auto 50px;
     height: 115px;
-    
-    
 }
 nav > div {
     align-self: center;
@@ -38,16 +45,7 @@ nav > div >a:active {
 #nav-myprofile {
     border: 2px solid gray;
 }
-h1 {
-    font-size: 34px;
-    text-align: center;
-}
-h2 {
-    font-size: 24px;
-}
-#copyright {
-    font-size: 18px;
-}
+
 #top {
     width: 100%;
     margin: 20px auto;
@@ -78,18 +76,25 @@ footer {
     nav {
         display: flex;
         justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 50px;
     }
     #about > div {
        display: flex;
        justify-content: space-around;
+       max-width: 1000px;
+       margin: 0 auto;
     }
     #works > div {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        max-width: 1150px;
+        margin: 0 auto;
     }
     #works > div > div {
         margin: 0 auto;
-        width: 33%;
+        max-width: 358px;
     }
     #about-text {
         padding-top: 30px;
@@ -99,13 +104,16 @@ footer {
 
 /* スマホ用スタイル */
 @media screen and (max-width: 767px) {
-    nav {
 
+    nav {
+        font-size: 25px;
         display: flex;
         justify-content: space-around;
+        margin: 0 auto;
     }
     #about-text {
-        padding: 0 20px;
+        width: 400px;
+        margin: 0 auto;
     }
     #face-photo-div {
         text-align: center;
