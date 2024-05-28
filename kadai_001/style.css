@@ -64,10 +64,6 @@ h2 {
 #works {
     margin: 20px auto;
 }
-#works > div > div {
-    margin: 0 10px;
-    width: 30%;
-}
 
 footer {
     margin: 50px;
@@ -90,6 +86,10 @@ footer {
     #works > div {
         display: flex;
         justify-content: space-around;
+    }
+    #works > div > div {
+        margin: 0 10px;
+        width: 30%;
     }
     #about-text {
         padding-top: 30px;
