@@ -1,0 +1,115 @@
+/* 共通スタイル */
+body {
+    color: #000000;
+    background-color: #ffffff;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+nav {
+    font-size: 34px;
+    margin: auto 50px;
+    height: 115px;
+    
+    
+}
+nav > div {
+    align-self: center;
+}
+nav > div > a {
+    text-decoration: none;
+}
+nav > div > a:link {
+    color: #000000;
+}
+nav > div >a:visited {
+    color: #000000;
+}
+nav > div >a:hover {
+    color: #000000;
+}
+nav > div >a:active {
+    color: #000000;
+}
+#nav-myprofile {
+    border: 2px solid gray;
+}
+h1 {
+    font-size: 34px;
+    text-align: center;
+}
+h2 {
+    font-size: 24px;
+}
+#copyright {
+    font-size: 18px;
+}
+#top {
+    width: 100%;
+    margin: 20px auto;
+}
+#main-visual {
+    width: 100%;
+}
+
+#about {
+    margin: 60px auto;
+}
+#face-photo {
+    border-radius: 50%;
+}
+
+
+#works {
+    margin: 20px auto;
+}
+#works > div > div {
+    margin: 0 10px;
+}
+
+footer {
+    margin: 50px;
+    text-align: center;
+
+}
+/* PC用スタイル */
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 1200px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    #about > div {
+       display: flex;
+       justify-content: space-around;
+    }
+    #works > div {
+        display: flex;
+        justify-content: space-around;
+    }
+    #about-text {
+        padding-top: 30px;
+    }
+
+}
+
+/* スマホ用スタイル */
+@media screen and (max-width: 767px) {
+    nav {
+
+        display: flex;
+        justify-content: space-around;
+    }
+    #about {
+        padding: 0 20px;
+    }
+    #face-photo-div {
+        text-align: center;
+    }
+    #works > div {
+        text-align: center;
+    }
+}
